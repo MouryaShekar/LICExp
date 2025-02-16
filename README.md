@@ -46,7 +46,7 @@ Set the frequency range, e.g., from 1 Hz to 10 MHz, and analyze the magnitude an
 Observe the frequency response and note the gain and bandwidth.
 
 ## Circuit diagram:
-![Circuit](https://github.com/user-attachments/assets/377d58c1-3185-4bbe-9f4d-aec7c1ce59c0)
+![Circuit](https://github.com/user-attachments/assets/ead17790-c4ea-4b1e-8870-339b331f0366)
 ## Calculations:
 Power = 100uW
 
@@ -69,27 +69,30 @@ Q point is (1.25V,55.55uA)
 
 |Width |  Current(Id) |  Vout |
 
-|1um   |  134.8uA      | 0.451 |
+|1um   |  128.7uA      | 0.51 |
 
-|0.7um |  108.9uA      | 0.71 |
+|0.5um |  82.6uA      | 0.97 |
 
-|0.5um |  88.3uA     | 0.91  |
+|0.2um |  52.1uA      | 1.27 |
 
-|0.2um |  55.55uA     | 1.24 | 
+|0.23um |  55.0uA     | 1.25  |
+
+|0.235um |  55.55uA     | 1.24 | 
+
 ## Results:
 1.**DC Analysis:**
-![DC analysis](https://github.com/user-attachments/assets/420f5ee9-96ad-4d5f-86a1-cd9970354320)
+![DC analysis](https://github.com/user-attachments/assets/e3a217bb-5156-4ed3-8fc0-6b39a11e0db0)
 Id=55.55uA\
 Vout=1.24V\
 Width=0.2um\
 DC Operating point : (1.24V,55uA) is for 0.2um Width and 180nm Length.
 2.**Transient Analysis:**
-![Transient analysis](https://github.com/user-attachments/assets/83df4dd3-3bc7-44eb-8467-8d0e51d6761d)
+![Transient analysis](https://github.com/user-attachments/assets/1a4ed268-55a6-49a2-9a2b-39efdedeae6b)
 Vout=1.24V\
 Between the input and output, there is a 180 degree phase shift.
 3.**AC Analysis:**
-![AC analysis](https://github.com/user-attachments/assets/b6071211-7272-4c74-9e53-bd68c856b85e)
-Gain:-2.2dB
+![AC analysis](https://github.com/user-attachments/assets/cf43fd43-b7c0-4ef9-a7e4-ca294f8cf238)
+Gain:3.08dB
 ## Inference:
 1. Drain current is directly propotional to the width of the MOSFET and the current varies with the change in width.
 
