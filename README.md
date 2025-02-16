@@ -26,21 +26,25 @@ Transient Analysis examines how the amplifier responds to a time-varying input s
 AC analysis is used to determine the voltage gain of the amplifier. The voltage gain for a common-source amplifier is given by the equation**-gm*Rd**; gm is transconductance of the amplifier.
 
 ## Procedure:
+
 Step 1: DC Analysis
 Set up the circuit in LTspice, including the MOSFET,resistors, and supply voltage (Vdd).
 change the name as CMOSN and give the length and width value.
 Use the .op command to perform the DC operating point analysis in LTspice.
 Check the DC values of drain current (Id), gate-source voltage (Vgs), and drain-source voltage (Vds).
+
 Step 2: Transient Analysis 
 Add an AC signal source (Vin) at the gate of the MOSFET.
 Use the .tran command in LTspice for transient analysis.
 Set the simulation time and time step (e.g., 10ms).
 Observe the output waveform to measure the time-domain response, such as the output signal amplitude and phase shift.
+
 Step 3: AC Analysis 
 Replace the DC signal source with an AC signal source (small AC voltage like 1V).
 Use the .ac command to perform frequency response analysis.
 Set the frequency range, e.g., from 1 Hz to 10 MHz, and analyze the magnitude and phase of the voltage gain.
 Observe the frequency response and note the gain and bandwidth.
+
 ## Circuit diagram:
 ![Circuit](https://github.com/user-attachments/assets/377d58c1-3185-4bbe-9f4d-aec7c1ce59c0)
 ## Calculations:
