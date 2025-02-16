@@ -84,7 +84,7 @@ Vout=1.24V\
 Width=0.2um\
 DC Operating point : (1.24V,55uA) is for 0.2um Width and 180nm Length.
 2.**Transient Analysis:**
-![Transient analysis](https://github.com/user-attachments/assets/26905fb1-5834-4a29-a0e8-53c90b5f3f3c)
+![Transient analysis](https://github.com/user-attachments/assets/83df4dd3-3bc7-44eb-8467-8d0e51d6761d)
 Vout=1.24V\
 Between the input and output, there is a 180 degree phase shift.
 3.**AC Analysis:**
