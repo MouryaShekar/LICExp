@@ -1,4 +1,4 @@
-# LICExp
+# LICExp1
 ## Aim:
 To perform DC, transient, and AC analysis of a Common Source (CS) amplifier circuit using LTspice and extract various other parameters.
 ## Components required:
