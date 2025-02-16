@@ -68,17 +68,11 @@ Q point is (1.24V,55.55uA)
 ## Tabular Column :
 
 |Width  |  Current(Id) |  Vout |
-
 |:----: |  :---------: |  :--: |
-
 |1um    |  128.7uA     | 0.51  |
-
 |0.5um  |  82.6uA      | 0.97  |
-
 |0.2um  |  52.1uA      | 1.27  |
-
 |0.23um |  55.0uA      | 1.25  |
-
 |0.235um|  55.55uA     | 1.24  | 
 
 ## Results:
