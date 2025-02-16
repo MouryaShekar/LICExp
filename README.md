@@ -1,4 +1,5 @@
 # LICExp1
+# Circuit1
 ## Aim:
 To perform DC, transient, and AC analysis of a Common Source (CS) amplifier circuit using LTspice and extract various other parameters.
 ## Components required:
@@ -96,8 +97,95 @@ Gain:3.08dB
 
 
 
+# Circuit2
+## Aim:
+To perform DC, transient, and AC analysis of a Common Source (CS) amplifier circuit using LTspice and extract various other parameters.
+## Components required:
+N-channel MOSFET(nmos4,pmos4), Voltage supply (1.8V,0.9V) and connecting wires.
 
+## Theory:
 
+A Diode connected MOSFET transistor is always in saturation and acts as amplifier and current source. 
+The different type of analysis to be performed are DC Analysis, AC Analysis and Transient analysis.
+The drain current obtained is given by the formula \
+**I<sub>d</sub> = 1/2 k<sub>n</sub> V<sub>ov</sub><sup>2</sup>** ; **V<sub>ov</sub>=V<sub>gs</sub>-V<sub>th</sub>** and **k<sub>n</sub>=u<sub>n</sub> C<sub>ox</sub> W/L**
+
+DC Analysis is performed to ensure the MOSFET is operating in the saturation region. It checks the biasing conditions, ensuring the MOSFET behaves as an amplifier. The drain current, gate-source voltage, and drain-source voltage are calculated.
+
+Transient Analysis examines how the amplifier responds to a time-varying input signal, such as a sine wave. It provides insight into how the output signal changes over time in response to changes in the input signal.
+
+AC analysis is used to determine the voltage gain of the amplifier. The voltage gain for a common-source amplifier is given by the equation**-gm*Rd**; gm is transconductance of the amplifier.
+
+## Procedure:
+
+Step 1: DC Analysis
+Set up the circuit in LTspice, including the MOSFET,resistors, and supply voltage (Vdd).
+change the name as CMOSN and give the length and width value.
+Use the .op command to perform the DC operating point analysis in LTspice.
+Check the DC values of drain current (Id), gate-source voltage (Vgs), and drain-source voltage (Vds).
+
+Step 2: Transient Analysis 
+Add an AC signal source (Vin) at the gate of the MOSFET.
+Use the .tran command in LTspice for transient analysis.
+Set the simulation time and time step (e.g., 10ms).
+Observe the output waveform to measure the time-domain response, such as the output signal amplitude and phase shift.
+
+Step 3: AC Analysis 
+Replace the DC signal source with an AC signal source (small AC voltage like 1V).
+Use the .ac command to perform frequency response analysis.
+Set the frequency range, e.g., from 1 Hz to 10 MHz, and analyze the magnitude and phase of the voltage gain.
+Observe the frequency response and note the gain and bandwidth.
+
+## Circuit diagram:
+![Circuit](https://github.com/user-attachments/assets/c41f18ca-d574-441b-8577-598356908c8b)
+## Calculation:
+Power = 100uW
+
+P = V*I ; ( V= 1.8 V)\
+That implies I<sub>d</sub> = 55.55uA
+
+V <sub>out/sub> = 1.664 V
+
+Length= 180nm
+
+Width=0.88um
+
+V<sub>ds</sub> = V<sub>out</sub>
+## Tabular Column:
+
+|Width  |  Current(Id) |  Vout |
+|:----: |  :---------: |  :--: |
+|1.0um  |  61.27uA     | 1.667 |
+|0.5um  |  56.63uA     | 1.665 |
+|0.8um  |  52.00uA     | 1.661 |
+|0.88um |  55.55uA     | 1.664 | 
+
+## Simulation Result:
+## DC Analysis:
+![DC analysis](https://github.com/user-attachments/assets/f8fc6a21-6afe-459d-90da-c6ec6e883fb4)
+DC Operating Point =( 1.664V ,55.55uA)
+
+## Transient Analysis:
+![Transient analysis](https://github.com/user-attachments/assets/eaa3058b-dd4b-4995-8222-e0d9e4f6cfe8)
+There is 180 degree phase shift between input and output.
+Vout=1.664V and the width =0.88um.
+
+## AC Analysis:
+![AC analysis](https://github.com/user-attachments/assets/6dc9f7a0-64e5-4496-a4ce-12b730c5cb90)
+Gain = -0.85 dB
+
+## Inference:
+1.The Current I<sub>d</sub> is dependent on width and hence it changes when the width changes whereas the remaining parameters remain constany.
+
+2.DC Analysis ensures proper biasing and hence the mosfet operates in saturation and Q point stability is attained.
+
+3.The Transient analysis reveleas the response of the circuit to time domain ssignal and determines how quickly the circuit responds to variation.\
+This is essential in high speed applications.
+
+4.AC Analysis helps in designing circuits with desired gain and helps in impedance matching.\
+Also helps in understanding the frequency response and small signal behaviour of the circuit.
+
+5.Together all the analysis helps in designing and opyimising an amplifier.
 
 
 
