@@ -54,7 +54,7 @@ Loop Equation: V<sub>dd</sub>=V<sub>ds</sub>+I<sub>d</sub>*R<sub>d</sub>
 
 P=I*V (I<sub>d</sub>=55.55 uA , V<sub>dd</sub>=1.8V)
 
-clearly V<sub>ds</sub>=V<sub>out</sub>; V<sub>ds</sub>>=V<sub>gs</sub>-V<sub>th</sub>
+V<sub>ds</sub>=V<sub>out</sub>; V<sub>ds</sub>>=V<sub>gs</sub>-V<sub>th</sub>
 
 R<sub>d</sub> (upon calculation) =10Kohm 
 
