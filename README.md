@@ -6,16 +6,25 @@ N-channel MOSFET(nmos4), Resistor (10K), Voltage supply (1.8V,0.9V) and connecti
 ## Theory:
 The Metal-Oxide-Semiconductor Field-Effect Transistor(MOSFET) is one of the most important components in electronics.
 A MOSFET has a simple structure with only three terminals: Gate (G), Drain (D), and Source (S). 
+
 MOSFETs are small and can be easily integrated into dense circuits, making them perfect for modern electronic devices, especially in VLSI (Very Large-Scale Integration) technology.MOSFETs use very little power.
+
 MOSFETs can be connected in different ways, and each configuration offers different performance characteristics. The three main configurations are Common source, common drain and common gate.
+
 MOSFET acts as amplifier in the saturation region when Vgs > Vth,Vgd < Vth , and Vds>=Vov for an N channel mosfet.
+
 In the common-source configuration provides 180-degree Phase Shift,High Input Impedance and high voltage gain.
 MOSFET Drain current equation:
 The drain current (Id) in the saturation region is given by
+
 **I<sub>d</sub> = 1/2*k<sub>n*(Vov)<sup>2</sup>**; **V<sub>ov</sub> = V<sub>gs</sub>-V<sub>th</sub>** **&** ****k<sub>n</sub>=W/L*u<sub>n</sub>*C<sub>ox</sub>**** for lambda = 0.
+
 DC Analysis is performed to ensure the MOSFET is operating in the saturation region. It checks the biasing conditions, ensuring the MOSFET behaves as an amplifier. The drain current, gate-source voltage, and drain-source voltage are calculated.
+
 Transient Analysis examines how the amplifier responds to a time-varying input signal, such as a sine wave. It provides insight into how the output signal changes over time in response to changes in the input signal.
+
 AC analysis is used to determine the voltage gain of the amplifier. The voltage gain for a common-source amplifier is given by the equation**-gm*Rd**; gm is transconductance of the amplifier.
+
 ## Procedure:
 Step 1: DC Analysis
 Set up the circuit in LTspice, including the MOSFET,resistors, and supply voltage (Vdd).
