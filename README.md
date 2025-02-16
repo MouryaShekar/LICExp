@@ -89,7 +89,7 @@ Vout=1.24V\
 Between the input and output, there is a 180 degree phase shift.
 3.**AC Analysis:**
 ![AC analysis](https://github.com/user-attachments/assets/b6071211-7272-4c74-9e53-bd68c856b85e)
-Gain:2.2dB
+Gain:-2.2dB
 ## Inference:
 1. Drain current is directly propotional to the width of the MOSFET and the current varies with the change in width.
 
