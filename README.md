@@ -60,11 +60,11 @@ R<sub>d</sub> (upon calculation) =10Kohm
 
 Widhth=0.2um(Vary width to get the current)
 
-V<sub>ds</sub>=1.25V
+V<sub>ds</sub>=1.24V
 
 gain=2.2dB(from AC analysis)
 
-Q point is (1.25V,55.55uA)
+Q point is (1.24V,55.55uA)
 ## Tabular Column :
 
 |Width |  Current(Id) |  Vout |
@@ -84,8 +84,8 @@ Q point is (1.25V,55.55uA)
 ![DC analysis](https://github.com/user-attachments/assets/e3a217bb-5156-4ed3-8fc0-6b39a11e0db0)
 Id=55.55uA\
 Vout=1.24V\
-Width=0.2um\
-DC Operating point : (1.24V,55uA) is for 0.2um Width and 180nm Length.
+Width=0.235um\
+DC Operating point : (1.24V,55uA) is for 0.235um Width and 180nm Length.
 2.**Transient Analysis:**
 ![Transient analysis](https://github.com/user-attachments/assets/1a4ed268-55a6-49a2-9a2b-39efdedeae6b)
 Vout=1.24V\
