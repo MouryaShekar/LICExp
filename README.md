@@ -175,17 +175,13 @@ Vout=1.664V and the width =0.88um.
 Gain = -0.85 dB
 
 ## Inference:
-1.The Current I<sub>d</sub> is dependent on width and hence it changes when the width changes whereas the remaining parameters remain constany.
+1. Drain current is directly propotional to the width of the MOSFET and the current varies with the change in width.
 
-2.DC Analysis ensures proper biasing and hence the mosfet operates in saturation and Q point stability is attained.
+2. Q point stability is attained in saturation region and attains the linear amplification.
 
-3.The Transient analysis reveleas the response of the circuit to time domain ssignal and determines how quickly the circuit responds to variation.\
-This is essential in high speed applications.
+3.The Transient analysis shows the frequency response of the circuit to time domain signal and it can quickly responds to variations in the circuit
 
-4.AC Analysis helps in designing circuits with desired gain and helps in impedance matching.\
-Also helps in understanding the frequency response and small signal behaviour of the circuit.
-
-5.Together all the analysis helps in designing and opyimising an amplifier.
+4.With the desired gain we can design the circuits and matches the impedance.
 
 
 
