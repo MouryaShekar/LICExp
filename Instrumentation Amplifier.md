@@ -48,6 +48,10 @@ For RG = 20kΩ
 - ADM = (20k / 10k) × [1 + 2 × (10k / 20k)]
 - ADM = 6V/V
 
+### Transient Analysis for ACM:
+
+![acm](https://github.com/user-attachments/assets/701bd58b-537b-494b-89b6-038da4ff6a94)
+
 ### Comparison Table:
 |RG     |  ADM         |  ACM  |  CMRR |
 |:----: |  :---------: |  :--: |:----: | 
